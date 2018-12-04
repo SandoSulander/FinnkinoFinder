@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="80dp"
+        android:text="Time frame" />
+
+    <TextView
+        android:id="@+id/fromText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="170dp"
+        android:text="From" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="19dp"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/toText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="41dp"
+        android:text="To" />
+
+    <Spinner
+        android:id="@+id/theatreSpinner"
+        android:layout_width="271dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="115dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <Spinner
+        android:id="@+id/movieSpinner"
+        android:layout_width="271dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="187dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="dd.mm.yyyy"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTimeIn"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="126dp"
+        android:ems="10"
+        android:hint="HH:mm:ss"
+        android:inputType="text|time" />
+
+    <EditText
+        android:id="@+id/editTimeBetween"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="HH:mm:ss"
+        android:inputType="text|time" />
+
+    <TextView
+        android:id="@+id/textTheatres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="95dp"
+        android:text="Area / Theatre" />
+
+    <TextView
+        android:id="@+id/textMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="168dp"
+        android:text="Movie" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="9dp"
+        android:onClick="Search"
+        android:text="Search" />
+
+
+    <ScrollView
+        android:id="@+id/movieScroll"
+        android:layout_width="match_parent"
+        android:layout_height="287dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="223dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp">
+
+        <LinearLayout
+            android:id="@+id/movieScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/showView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/movieScroll"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
